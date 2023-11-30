@@ -1,0 +1,335 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+html {
+    scroll-behavior: smooth;
+}
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    background-color: #333;
+
+    text-align: center;
+    padding: 20px;
+
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-name {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-name h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    color: #fff;
+}
+.header-name h2{
+    color: #dacdcd;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.header-name h1 span {
+    color: red;
+    opacity: 0.69;
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+#about {
+
+    color: #ababab;
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.About-image {
+    flex-basis: 35%;
+}
+
+.About-image img {
+    width: 80%;
+    border-radius: 15px;
+}
+
+.About-Section{
+    flex-basis: 50%;
+}
+
+.aboutme {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.titles {
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+
+.links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+
+.links.active-link::after {
+    width: 50%;
+}
+
+.contents ul li {
+
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contents {
+    display: none;
+}
+
+.contents.active-content {
+    display: block;
+}
+
+.contents span {
+    color: red;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding-top: 25px;
+}
+.contents ul li a {
+    text-decoration: none;
+    color: inherit; 
+  }
+  
+
+
+.contents active-content ul li {
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    #header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+    
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-right: -10px;
+        margin-top: 15px;
+    }
+
+    .aboutme {
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+
+
+
+    .header-name {
+        margin-top: 75%;
+        font-size: 20px;
+    }
+
+    .header-name h1 {
+        font-size: 42px;
+        margin-top: 40px;
+        padding: 25px;
+    }
+
+    #about {
+        padding: 55px 0;
+        color: #ababab;
+        height: 80vh;
+    }
+    .About-Section{
+        height: 100vh;
+        
+        
+    }
+    .About-image img{
+
+        width: 35vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+}
+
+@media (max-width: 480px) {
+    .About-Section {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+
+    .aboutme {
+        font-size: 30px;
+        text-align: center; 
+    }
+
+    .titles {
+        flex-direction: column; 
+        align-items: center;
+        margin: 20px 0 40px;
+    }
+
+    .links {
+        margin: 0 0 10px; 
+    }
+
+    .contents ul li {
+        font-size: 16px; 
+    }
+    .About-Section p{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .About-Section {
+        flex-basis: 100%;
+        
+    }
+    #header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+    }
+    .header-name h1{
+        margin-top: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .aboutme {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .titles {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 40px;
+    }
+
+    .links {
+        margin: 0 0 10px;
+    }
+
+    .contents ul li {
+        font-size: 18px;
+    }
+    .About-Section p{
+        display: flex;
+        justify-content: center;
+        font-size: larger;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .About-Section {
+        flex-basis: 50%; 
+    }
+
+    .aboutme {
+        font-size: 60px;
+        text-align: center; 
+    }
+
+    .titles {
+        flex-direction: row; 
+        margin: 20px 0 40px;
+    }
+
+    .links {
+        margin: 0 50px 0 0; 
+    }
+
+    .contents ul li {
+        font-size: 18px; 
+    }
+}
+
