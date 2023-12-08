@@ -22,6 +22,9 @@ class Portfolio extends React.Component {
     render() {
         return (
             <div>
+            
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                
                 <div id="header">
                     <Navbar />
 
@@ -66,15 +69,15 @@ class Portfolio extends React.Component {
                                     </ul>
                                 </div>
                                 <div id="contact">
-                                
-                                <div className="contents" id="contacts">
-                                    <ul>
-                                        <li><a href='mailto:adithyan788@gmail.com'>Email: adithyan788@gmail.com</a></li>
 
-                                        <li>phone no:9645186097</li>
+                                    <div className="contents" id="contacts">
+                                        <ul>
+                                            <li><a href='mailto:adithyan788@gmail.com'>Email: adithyan788@gmail.com</a></li>
 
-                                    </ul>
-                                </div>
+                                            <li>phone no:9645186097</li>
+
+                                        </ul>
+                                    </div>
                                 </div>
 
                             </div>
@@ -82,7 +85,7 @@ class Portfolio extends React.Component {
                     </div>
                 </div>
 
-                
+
             </div>
         );
     }
